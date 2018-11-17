@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WeatherdbApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.servlet.context-path", "/api/v1");
 		SpringApplication.run(WeatherdbApplication.class, args);
 	}
 }

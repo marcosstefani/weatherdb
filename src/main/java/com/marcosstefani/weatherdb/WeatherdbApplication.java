@@ -10,6 +10,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableRabbit
+@EnableScheduling
 public class WeatherdbApplication {
 	
 	@Value("${queue.weather.name}")

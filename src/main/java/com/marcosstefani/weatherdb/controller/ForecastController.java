@@ -43,7 +43,7 @@ public class ForecastController {
 		return forecastService.uploadFromService(city);
 	}
 	
-	@Scheduled(fixedRate = 60000)
+	@Scheduled(fixedRate = 600000)
 	@PostMapping(value = "/messages")
 	public void sendMesssagesToUpload() {
 		forecastService.sendMessagesToUpload();
